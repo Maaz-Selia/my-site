@@ -20,6 +20,7 @@ function App() {
       <GridItem colStart={7} colSpan={2} rowStart={13} rowSpan={1}>
         DownArrow
       </GridItem>
+      <GridItem></GridItem>
     </Grid>
   )
 }
