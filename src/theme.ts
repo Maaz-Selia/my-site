@@ -1,18 +1,18 @@
 import { ThemeConfig, extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
 import { myPallete } from "./constants/myColors";
 
-/* config settings for light-dark mode, follows system setting changes */
+/* Default set to Light -> Does not follow system setting changes */
 const config: ThemeConfig = {
-    initialColorMode: 'system',
-    useSystemColorMode: true,
+    initialColorMode: 'light',
+    useSystemColorMode: false,
 }
 
 const theme = extendTheme({
     config,
     colors: {
-        /* Colour pallete from Smart Swatch: https://smart-swatch.netlify.app/#716758 */
         myPallete: 
         {
+            /* Spread myPallete object from "./constants/myColors" */
           ...myPallete
         },
         'white': myPallete[50],

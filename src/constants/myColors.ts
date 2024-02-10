@@ -1,16 +1,19 @@
+/* Colours from original Figma Design */
 export const darkBrown =  '#716758';
 export const lightBrown = '#E9DCD6';
 export const altBrown = '#D9C9C1';
 
+
+/* Colour pallete from Smart Swatch: https://smart-swatch.netlify.app */
 export const myPallete = {
-  50: '#ffedf1',
-  100: '#e4d0d4',
-  200: '#cdb2b8',
-  300: '#b8949c',
-  400: '#a2767f',
-  500: '#895d66',
-  600: '#6b474f',
-  700: '#4e3338',
-  800: '#311e22',
-  900: '#18060a',
+  50: '#f8efe7',
+  100: '#e0d7d0',
+  200: '#c8bfb6',
+  300: '#b1a69b',
+  400: '#9a8d7f',
+  500: '#807565',
+  600: '#645b4e',
+  700: '#494037',
+  800: '#2c251e',
+  900: '#120900',
 };
