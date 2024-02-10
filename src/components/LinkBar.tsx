@@ -1,4 +1,4 @@
-import { Button, HStack, Text, useColorMode } from '@chakra-ui/react'
+import { Button, HStack, useColorMode } from '@chakra-ui/react'
 
 const LinkBar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
