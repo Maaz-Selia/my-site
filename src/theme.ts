@@ -6,13 +6,7 @@ const config: ThemeConfig = {
 }
 
 const theme = extendTheme({
-    config,
-    colors: {
-        darkBrown:'#716758',
-        lightBrown: '#E9DCD6',
-        altBrown: '#D9C9C1'
-
-    }
+    config
 });
 
 export default theme;

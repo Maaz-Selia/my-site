@@ -1,11 +1,14 @@
-import { Button, Grid, GridItem, useColorMode, useColorModeValue } from '@chakra-ui/react'
+import { Button, Grid, GridItem, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { darkBrown, lightBrown } from '../constants/myColors';
 
 const Homepage = () => {
 
-    const bg = useColorModeValue('lightBrown', 'darkBrown');
-    const altbg = useColorModeValue('darkBrown', 'lightBrown');
-
     const { colorMode, toggleColorMode } = useColorMode();
+
+    const bg = useColorModeValue(lightBrown, darkBrown);
+    const altbg = useColorModeValue(darkBrown, lightBrown);
+
+    
 
   return (
     <Grid h='100vh'
