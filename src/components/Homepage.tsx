@@ -1,7 +1,10 @@
-import { Button, Grid, GridItem, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { Grid, GridItem, HStack, Text} from '@chakra-ui/react';
+import NavBar from './NavBar';
+import LinkBar from './LinkBar';
+import TextBody from './TextBody';
 
 const Homepage = () => {
-    const { colorMode, toggleColorMode } = useColorMode();    
+     
 
     return (
         <Grid h='100vh'
@@ -10,17 +13,16 @@ const Homepage = () => {
             gap={3}
         >
         <GridItem colStart={2} colSpan={1} rowStart={2} rowSpan={12}>
-            NavBar
+            <NavBar />
         </GridItem>
         <GridItem colStart={3} colSpan={8} rowStart={5} rowSpan={1}>
-            LinkBar
-            <Button onClick={toggleColorMode}>Toggle { colorMode === 'light' ? 'dark' : 'light' }</Button>
+            <LinkBar />
         </GridItem>
         <GridItem colStart={3} colSpan={10} rowStart={9} rowSpan={3}>
-            TextBody
+            <TextBody />
         </GridItem>
         <GridItem colStart={7} colSpan={2} rowStart={14} rowSpan={1}>
-            DownArrow
+            <HStack justifyContent='center'><Text>Down Arrow</Text></HStack>
         </GridItem>
         </Grid>
     )
