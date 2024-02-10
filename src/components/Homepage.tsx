@@ -2,7 +2,6 @@ import { Button, Grid, GridItem, useColorMode, useColorModeValue } from '@chakra
 import { darkBrown, lightBrown } from '../constants/myColors';
 
 const Homepage = () => {
-
     const { colorMode, toggleColorMode } = useColorMode();
 
     const bg = useColorModeValue(lightBrown, darkBrown);
