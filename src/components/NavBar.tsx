@@ -4,7 +4,7 @@ const NavBar = () => {
     return (
         <VStack>
             <Button>Projects</Button>
-            <Button>Interest</Button>
+            <Button>Interests</Button>
             <Button>Contact</Button>
         </VStack>
     )
