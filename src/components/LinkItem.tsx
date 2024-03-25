@@ -1,8 +1,15 @@
-import React from 'react'
+import { ReactNode } from "react";
 
-const LinkItem = () => {
+interface Props {
+    link: string;
+    children: ReactNode;
+}
+
+const LinkItem = ({ link, children }: Props) => {
   return (
-    <a></a>
+    <a href={link} target='_blank' rel='noopener noreferrer'>
+        {children}
+    </a>
   )
 }
 

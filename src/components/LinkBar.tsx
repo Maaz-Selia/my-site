@@ -1,25 +1,25 @@
-import { Button, HStack, useColorMode } from '@chakra-ui/react'
+import { HStack, useColorMode } from '@chakra-ui/react'
 import { BiLogoGithub, BiLogoYoutube, BiLogoLinkedinSquare, BiSun, BiSolidMoon } from "react-icons/bi";
-import { iconSize } from '../constants/mySizes';
-
+import LinkItem from './LinkItem';
 
 const LinkBar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
+    const iconSize = 35;
 
     return (
-        <HStack alignItems='center' justifyContent='right' gap={2}>
-            <a href='https://github.com/Maaz-Selia' target='_blank' rel='noopener noreferrer'>
+        <HStack alignItems='center' justifyContent='right' gap={10}>
+            <LinkItem link='https://github.com/Maaz-Selia' >
                 <BiLogoGithub size={iconSize} />
-            </a>
-            <a href='www.youtube.com/@_masmoto' target='_blank' rel='noopener noreferrer'>
+            </LinkItem>
+            <LinkItem link='www.youtube.com/@_masmoto'>
                 <BiLogoYoutube size={iconSize} />
-            </a>
-            <a href='https://www.linkedin.com/in/maaz-selia' target='_blank' rel='noopener noreferrer'>
+            </LinkItem>
+            <LinkItem link='https://www.linkedin.com/in/maaz-selia'>
                 <BiLogoLinkedinSquare size={iconSize} />
+            </LinkItem>
+            <a onClick={toggleColorMode} style={{cursor: 'pointer'}} >
+                { colorMode === 'light' ? <BiSolidMoon size={iconSize} /> : <BiSun size={iconSize} /> }
             </a>
-            <a onClick={toggleColorMode} >
-                { colorMode === 'light' ? <BiSolidMoon /> : <BiSun /> }
-            </a>        
         </HStack>
     )
 }
