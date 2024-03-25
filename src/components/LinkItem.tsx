@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
 
 interface Props {
-    link: string;
+    destination: string;
     children: ReactNode;
 }
 
-const LinkItem = ({ link, children }: Props) => {
+const LinkItem = ({ destination, children }: Props) => {
   return (
-    <a href={link} target='_blank' rel='noopener noreferrer'>
+    <a href={destination} target='_blank' rel='noopener noreferrer'>
         {children}
     </a>
   )

@@ -9,13 +9,13 @@ const LinkBar = () => {
     return (
         <HStack alignItems='center' justifyContent='right' gap={10}>
             <hr style={{width: '100%', borderWidth: 1}}/>
-            <LinkItem link='https://github.com/Maaz-Selia' >
+            <LinkItem destination='https://github.com/Maaz-Selia' >
                 <BiLogoGithub size={iconSize} />
             </LinkItem>
-            <LinkItem link='www.youtube.com/@_masmoto'>
+            <LinkItem destination='www.youtube.com/@_masmoto'>
                 <BiLogoYoutube size={iconSize} />
             </LinkItem>
-            <LinkItem link='https://www.linkedin.com/in/maaz-selia'>
+            <LinkItem destination='https://www.linkedin.com/in/maaz-selia'>
                 <BiLogoLinkedinSquare size={iconSize} />
             </LinkItem>
             <a onClick={toggleColorMode} style={{cursor: 'pointer'}} >
