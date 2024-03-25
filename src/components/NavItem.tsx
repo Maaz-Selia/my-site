@@ -1,15 +1,15 @@
 import { Link as ReactRouterLink } from 'react-router-dom'
 import { Link as ChakraLink, LinkProps } from "@chakra-ui/react"
+import '../index.css'
 
 interface Props {
-    destination: string
-    label: string;
+    destination: string;
 }
 
-const NavItem = ({ destination, label}: Props) => {
+const NavItem = ({ destination }: Props) => {
   return (
-    <ChakraLink as={ReactRouterLink} to={destination}>
-        {label}
+    <ChakraLink as={ReactRouterLink} className='vertical=text' >
+        {destination}
     </ChakraLink>
   )
 }

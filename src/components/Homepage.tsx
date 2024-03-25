@@ -7,6 +7,7 @@ const Homepage = () => {
      
 
     return (
+        <>
         <Grid h='100vh'
             templateColumns='repeat(14, 1fr)'
             templateRows='repeat(14, 1fr)'
@@ -25,6 +26,12 @@ const Homepage = () => {
             <HStack justifyContent='center'><Text>Down Arrow</Text></HStack>
         </GridItem>
         </Grid>
+
+        <Grid h='100vh'
+        templateColumns='repeat(14, 1fr)'
+        templateRows='repeat(14, 1fr)'
+        gap={3} />
+        </>
     )
 }
 
