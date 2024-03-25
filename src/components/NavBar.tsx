@@ -1,13 +1,12 @@
 import { VStack } from '@chakra-ui/react'
-import '../index.css'
-import NavItem from './NavItem'
+import { Button } from '@chakra-ui/react'
 
 const NavBar = () => {
     return (
         <VStack alignItems='center' justifyContent='right' gap={10}>
-            <NavItem destination='Projects' />
-            <NavItem destination='Interests' />
-            <NavItem destination='Contact'/>
+            <Button>Projects</Button>
+            <Button>Interests</Button>
+            <Button>Contact</Button>
         </VStack>
     )
 }
