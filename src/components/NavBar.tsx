@@ -1,12 +1,12 @@
 import { VStack } from '@chakra-ui/react'
-import { Button } from '@chakra-ui/react'
+import VerticalText from './VerticalText'
 
 const NavBar = () => {
     return (
         <VStack alignItems='center' justifyContent='right' gap={10}>
-            <Button>Projects</Button>
-            <Button>Interests</Button>
-            <Button>Contact</Button>
+            <VerticalText>Projects</VerticalText>
+            <VerticalText>Interests</VerticalText>
+            <VerticalText>Contact</VerticalText>
         </VStack>
     )
 }
