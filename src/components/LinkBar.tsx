@@ -8,7 +8,7 @@ const LinkBar = () => {
 
     return (
         <HStack alignItems='center' justifyContent='right' gap={10}>
-            <hr style={{width: '100%', borderWidth: 1}}/>
+            <div style={{width: '100%', borderWidth: 1, borderColor: ''}}/>
             <LinkItem destination='https://github.com/Maaz-Selia' >
                 <BiLogoGithub size={iconSize} />
             </LinkItem>
