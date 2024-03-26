@@ -1,5 +1,5 @@
 import { VStack } from '@chakra-ui/react'
-import VerticalText from './VerticalText'
+import NavBarText from './NavBarText'
 import '../index.css'
 
 const NavBar = () => {
@@ -10,9 +10,9 @@ const NavBar = () => {
         <>
             <VStack alignItems='center' justifyContent='right' gap={10} display={'inline-flex'}>
                 <div style={{width: '100%', borderWidth: 1, transform: 'rotate(-90deg)', display: 'inline'}}/>
-                <VerticalText size={fontSize}>Contact</VerticalText>
-                <VerticalText size={fontSize}>Interests</VerticalText>
-                <VerticalText size={fontSize}>Projects</VerticalText>
+                <NavBarText size={fontSize}>Contact</NavBarText>
+                <NavBarText size={fontSize}>Interests</NavBarText>
+                <NavBarText size={fontSize}>Projects</NavBarText>
                 <div style={{width: '100%', borderWidth: 1, transform: 'rotate(-90deg)'}}/>
             </VStack>
         </>
