@@ -3,12 +3,13 @@ import { ReactNode } from "react"
 import '../index.css'
 
 interface Props {
-    children: ReactNode;    
+    children: ReactNode;
+    size: string;
 }
 
-const VerticalText = ({ children }: Props) => {
+const VerticalText = ({ children, size }: Props) => {
   return (
-    <Text className="vertical-text">{children}</Text>
+    <Text fontSize={size} className="vertical-text">{children}</Text>
   )
 }
 

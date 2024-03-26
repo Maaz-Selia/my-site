@@ -8,11 +8,11 @@ const LinkBar = () => {
 
     return (
         <HStack alignItems='center' justifyContent='right' gap={10}>
-            <div style={{width: '100%', borderWidth: 1, borderColor: ''}}/>
+            <div style={{width: '100%', borderWidth: 1}}/>
             <LinkItem destination='https://github.com/Maaz-Selia' >
                 <BiLogoGithub size={iconSize} />
             </LinkItem>
-            <LinkItem destination='www.youtube.com/@_masmoto'>
+            <LinkItem destination='https://www.youtube.com/@_masmoto'>
                 <BiLogoYoutube size={iconSize} />
             </LinkItem>
             <LinkItem destination='https://www.linkedin.com/in/maaz-selia'>
