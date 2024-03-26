@@ -1,7 +1,8 @@
-import { Grid, GridItem, HStack, Text} from '@chakra-ui/react';
+import { Grid, GridItem, HStack } from '@chakra-ui/react';
 import NavBar from './NavBar';
 import LinkBar from './LinkBar';
 import TextBody from './TextBody';
+import { BiHomeHeart } from "react-icons/bi";
 
 const Homepage = () => {
      
@@ -21,7 +22,7 @@ const Homepage = () => {
             <TextBody />
         </GridItem>
         <GridItem colStart={7} colSpan={2} rowStart={14} rowSpan={1}>
-            <HStack justifyContent='center'><Text>Home Button</Text></HStack>
+            <HStack justifyContent='center'><BiHomeHeart size={35} /></HStack>
         </GridItem>
         </Grid>
     )
