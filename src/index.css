@@ -1,7 +1,19 @@
 .vertical-text {
     writing-mode: vertical-rl; /* Bottom to top */
     text-orientation: mixed; /* Optional, depends on your preference */
-    transform: rotate(180deg); /* Adjust rotation as necessary */
+    transform: rotate(180deg);
+    padding: 10px;
+    display: inline-block;
+}
+
+.horizontal-line {
+    transform: rotate(180deg);
+    padding: 10px;
+    display: inline-block;
+}
+
+.vertical-line {
+    transform: rotate(180deg);
     padding: 10px;
     display: inline-block;
 }

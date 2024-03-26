@@ -1,5 +1,6 @@
 import { VStack } from '@chakra-ui/react'
 import VerticalText from './VerticalText'
+import '../index.css'
 
 const NavBar = () => {
     return (
