@@ -5,8 +5,8 @@ interface Props {
 
 const Line = ( { size, orientation }: Props) => {
 
-  let width = orientation == 'h' ? size : '1vh';
-  let height = orientation == 'v' ? size : '1vh';
+  let width = orientation === 'h' ? size : '0';
+  let height = orientation === 'v' ? size : '0';
 
   return (
     <div style={{width: width, height: height, borderWidth: 2, borderColor: '#494037'}} />

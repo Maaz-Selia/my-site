@@ -8,8 +8,8 @@ const LinkBar = () => {
     const iconSize = 35;
 
     return (
-        <HStack alignItems='center' justifyContent='right' gap={10}>
-            <Line size='50vh' orientation='h'/>
+        <HStack alignItems='center' justifyContent='left' gap={20} paddingLeft={10}>
+            <Line size='100%' orientation='h'/>
             <LinkItem destination='https://github.com/Maaz-Selia' >
                 <BiLogoGithub size={iconSize} />
             </LinkItem>
