@@ -8,7 +8,7 @@ const NavBar = () => {
 
     return (
         <>
-            <VStack alignItems='center' justifyContent='right' gap={10} display={'inline-flex'}>
+            <VStack alignItems='center' justifyContent='right' gap={10} display={'flex'}>
                 <div style={{width: '100%', borderWidth: 1, transform: 'rotate(-90deg)', display: 'inline'}}/>
                 <NavBarText size={fontSize}>Contact</NavBarText>
                 <NavBarText size={fontSize}>Interests</NavBarText>
