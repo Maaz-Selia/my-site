@@ -13,7 +13,7 @@ const NavBar = () => {
             <NavBarText size={fontSize}>Contact</NavBarText>
             <NavBarText size={fontSize}>Interests</NavBarText>
             <NavBarText size={fontSize}>Projects</NavBarText>
-            <Line size='10vh' orientation='v' />
+            <Line size='40vh' orientation='v' />
         </VStack>
     )
 }
