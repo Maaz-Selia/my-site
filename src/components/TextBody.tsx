@@ -1,11 +1,12 @@
-import { Heading, Text } from '@chakra-ui/react'
+import { Flex, Heading, Text } from '@chakra-ui/react'
 
 const Body = () => {
   return (
     <>
-      <Heading as='i' fontSize={'6xl'}>Maaz Selia</Heading>
-      <br />
-      <Text as='i' fontSize={'3xl'}>I love to code; ride motorbikes, play guitar, read, and spend time with loved ones.</Text>
+    <Heading as='i' fontSize={'6xl'}>Maaz Selia</Heading>
+    <Flex justifyContent={'center'} textIndent={'10%'} pt={10}>
+      <Text as='i' fontSize={'3xl'}>I love building and tinkering; getting my hands dirty with my motorbike; humbling myself attempting to play guitar and getting folded in half practicing Jiu-Jitsu; to code; last but not least, reading and sharing moments with family friends.</Text>
+    </Flex>
     </>
   )
 }
