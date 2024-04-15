@@ -1,6 +1,7 @@
 import { HStack, useColorMode } from '@chakra-ui/react'
 import { BiLogoGithub, BiLogoYoutube, BiLogoLinkedinSquare, BiSun, BiSolidMoon } from "react-icons/bi";
 import LinkItem from './LinkItem';
+import HorizontalLine from './HorizontalLine';
 
 const LinkBar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -8,7 +9,7 @@ const LinkBar = () => {
 
     return (
         <HStack alignItems='center' justifyContent='right' gap={10}>
-            <div style={{width: '100%', borderWidth: 2, borderColor: '#494037'}}/>
+            <HorizontalLine width='100%' rotate={false} />
             <LinkItem destination='https://github.com/Maaz-Selia' >
                 <BiLogoGithub size={iconSize} />
             </LinkItem>
