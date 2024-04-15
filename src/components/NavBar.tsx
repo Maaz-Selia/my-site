@@ -8,7 +8,7 @@ const NavBar = () => {
     const fontSize = '2xl';
 
     return (
-        <VStack gap={10}>
+        <VStack maxHeight='100%' gap={10}>
             <Line size='10vh' orientation='v' />
             <NavBarText size={fontSize}>Contact</NavBarText>
             <NavBarText size={fontSize}>Interests</NavBarText>
