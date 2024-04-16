@@ -1,10 +1,8 @@
-import { Grid, GridItem, HStack } from '@chakra-ui/react';
+import { useState } from 'react';
 import NavBar from './NavBar';
-import LinkBar from './LinkBar';
-import TextBody from './TextBody';
-import { BiHomeHeart } from "react-icons/bi";
-import { ReactComponentElement, useState } from 'react';
 import MainView from './MainView';
+import { Grid, GridItem, HStack } from '@chakra-ui/react';
+import { BiHomeHeart } from "react-icons/bi";
 
 const Homepage = () => {
 
@@ -17,11 +15,11 @@ const Homepage = () => {
             gap={3}
         >
         <GridItem colStart={2} colSpan={1} rowStart={2} rowSpan={12}>
-            <NavBar />
+            <NavBar setCurrentView={setCurrentView}/>
         </GridItem>
         {currentView}
         <GridItem colStart={7} colSpan={2} rowStart={14} rowSpan={1}>
-            <HStack justifyContent='center'><BiHomeHeart size={35} onClick={() => setCurrentView(<MainView />)} /></HStack>
+            <HStack justifyContent='center'><BiHomeHeart size={35} onClick={() => console.log('clicked Homepage')} /></HStack>
         </GridItem>
         </Grid>
     )

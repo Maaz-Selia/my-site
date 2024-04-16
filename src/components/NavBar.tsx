@@ -1,18 +1,23 @@
-import { VStack } from '@chakra-ui/react'
-import NavBarText from './NavBarText'
-import '../index.css'
+import { VStack, Text } from '@chakra-ui/react'
 import Line from './Line';
+import '../index.css'
 
-const NavBar = () => {
+interface Props {
+
+    setCurrentView: (currentView: JSX.Element) => void;
+
+}
+
+const NavBar = ( {setCurrentView }: Props) => {
     
     const fontSize = '2xl';
 
     return (
         <VStack maxHeight='100%' gap={10}>
             <Line size='10vh' orientation='v' />
-            <NavBarText size={fontSize}>Contact</NavBarText>
-            <NavBarText size={fontSize}>Interests</NavBarText>
-            <NavBarText size={fontSize}>Projects</NavBarText>
+            <Text size={fontSize} className='vertical-text' onClick={() => console.log('clicked Contact')}>Contact</Text>
+            <Text size={fontSize} className='vertical-text' onClick={() => console.log('clicked Interests')}>Interests</Text>
+            <Text size={fontSize} className='vertical-text' onClick={() => console.log('clicked Projects')}>Projects</Text>
             <Line size='40vh' orientation='v' />
         </VStack>
     )
