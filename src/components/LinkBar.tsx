@@ -11,16 +11,16 @@ const LinkBar = () => {
         <HStack maxWidth='100%' alignItems='center' justifyContent='left' gap={20} paddingLeft={10}>
             <Line size='100%' orientation='h'/>
             <LinkItem destination='https://github.com/Maaz-Selia' >
-                <BiLogoGithub size={iconSize} />
+                <BiLogoGithub className='icon' size={iconSize} />
             </LinkItem>
             <LinkItem destination='https://www.youtube.com/@_masmoto'>
-                <BiLogoYoutube size={iconSize} />
+                <BiLogoYoutube className='icon' size={iconSize} />
             </LinkItem>
             <LinkItem destination='https://www.linkedin.com/in/maaz-selia'>
-                <BiLogoLinkedinSquare size={iconSize} />
+                <BiLogoLinkedinSquare className='icon' size={iconSize} />
             </LinkItem>
             <a onClick={toggleColorMode} style={{cursor: 'pointer'}} >
-                { colorMode === 'light' ? <BiSolidMoon size={iconSize} /> : <BiSun size={iconSize} /> }
+                { colorMode === 'light' ? <BiSolidMoon className='icon' size={iconSize} /> : <BiSun className='icon' size={iconSize} /> }
             </a>
         </HStack>
     )
