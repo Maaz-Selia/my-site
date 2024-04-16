@@ -19,7 +19,7 @@ const Homepage = () => {
         </GridItem>
         {currentView}
         <GridItem colStart={7} colSpan={2} rowStart={14} rowSpan={1}>
-            <HStack justifyContent='center'><BiHomeHeart size={35} onClick={() => console.log('clicked Homepage')} /></HStack>
+            <HStack justifyContent='center'><BiHomeHeart size={35} onClick={() => setCurrentView(<MainView />)} /></HStack>
         </GridItem>
         </Grid>
     )
