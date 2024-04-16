@@ -1,6 +1,12 @@
+import { GridItem, Text } from "@chakra-ui/react"
+
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <>
+        <GridItem colStart={4} colSpan={8} rowStart={2} rowSpan={1}>
+            <Text fontSize='5xl'>// Projects</Text>
+        </GridItem>
+    </>
   )
 }
 

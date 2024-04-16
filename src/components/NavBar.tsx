@@ -12,14 +12,14 @@ interface Props {
 
 const NavBar = ( {setCurrentView }: Props) => {
 
-    const fontSize = '4xl';
+    const fontSize = '2xl';
 
     return (
         <VStack maxHeight='100%' gap={10}>
             <Line size='10vh' orientation='v' />
-            <Text size={fontSize} className='vertical-text' onClick={() => setCurrentView(<Contact />)}>Contact</Text>
-            <Text size={fontSize} className='vertical-text' onClick={() => setCurrentView(<Interests />)}>Interests</Text>
-            <Text size={fontSize} className='vertical-text' onClick={() => setCurrentView(<Projects />)}>Projects</Text>
+            <Text fontSize={fontSize} className='vertical-text' onClick={() => setCurrentView(<Contact />)}>Contact</Text>
+            <Text fontSize={fontSize} className='vertical-text' onClick={() => setCurrentView(<Interests />)}>Interests</Text>
+            <Text fontSize={fontSize} className='vertical-text' onClick={() => setCurrentView(<Projects />)}>Projects</Text>
             <Line size='40vh' orientation='v' />
         </VStack>
     )
