@@ -4,16 +4,5 @@
     transform: rotate(180deg);
     padding: 10px;
     display: inline-block;
-}
-
-.horizontal-line {
-    transform: rotate(180deg);
-    padding: 10px;
-    display: inline-block;
-}
-
-.vertical-line {
-    transform: rotate(180deg);
-    padding: 10px;
-    display: inline-block;
+    cursor: pointer;
 }
