@@ -9,7 +9,7 @@ const Line = ( { size, orientation }: Props) => {
   let height = orientation === 'v' ? size : '0';
 
   return (
-    <div style={{width: width, height: height, borderWidth: 2, borderColor: '#494037'}} />
+    <hr style={{width: width, height: height, borderWidth: 1, borderColor: '#494037', borderRadius: '1000'}} />
   )
 }
 

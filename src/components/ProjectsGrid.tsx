@@ -1,5 +1,4 @@
-import { GridItem, Text } from '@chakra-ui/react'
-import React from 'react'
+import { GridItem } from '@chakra-ui/react'
 import ProjectsCard from './ProjectsCard'
 
 const ProjectsGrid = () => {
