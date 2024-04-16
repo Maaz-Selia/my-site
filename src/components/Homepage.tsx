@@ -15,7 +15,7 @@ const Homepage = () => {
             gap={3}
         >
         <GridItem colStart={2} colSpan={1} rowStart={2} rowSpan={12}>
-            <NavBar setCurrentView={setCurrentView}/>
+            <NavBar currentView={currentView} setCurrentView={setCurrentView}/>
         </GridItem>
         {currentView}
         <GridItem colStart={7} colSpan={2} rowStart={14} rowSpan={1}>

@@ -4,15 +4,15 @@ import '../index.css'
 import Contact from './Contact';
 import Interests from './Interests';
 import Projects from './Projects';
+import { useEffect } from 'react';
 
 interface Props {
-
+    currentView: JSX.Element;
     setCurrentView: (currentView: JSX.Element) => void;
-
 }
 
-const NavBar = ( {setCurrentView }: Props) => {
-    
+const NavBar = ( {currentView, setCurrentView }: Props) => {
+
     const fontSize = '2xl';
 
     return (
