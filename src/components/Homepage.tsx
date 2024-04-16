@@ -9,9 +9,6 @@ import MainView from './MainView';
 const Homepage = () => {
 
     const [ currentView, setCurrentView ] = useState<JSX.Element>(<MainView />);
-
-
-
      
     return (
         <Grid h='100vh'
@@ -23,8 +20,8 @@ const Homepage = () => {
             <NavBar />
         </GridItem>
         {currentView}
-        <GridItem colStart={7} colSpan={2} rowStart={14} rowSpan={1} onClick={() => setCurrentView(<MainView />)}>
-            <HStack justifyContent='center'><BiHomeHeart size={35} /></HStack>
+        <GridItem colStart={7} colSpan={2} rowStart={14} rowSpan={1}>
+            <HStack justifyContent='center'><BiHomeHeart size={35} onClick={() => setCurrentView(<MainView />)} /></HStack>
         </GridItem>
         </Grid>
     )
