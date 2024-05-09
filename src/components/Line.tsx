@@ -9,7 +9,7 @@ const Line = ( { size, orientation }: Props) => {
   let height = orientation === 'v' ? size : '0';
 
   return (
-    <hr style={{width: width, height: height, borderWidth: 1, borderColor: '#494037', borderRadius: '1000'}} />
+    <hr style={{width: width, height: height, borderWidth: 1, borderColor: 'var(--chakra-colors-chakra-body-text)', borderRadius: '1000'}} />
   )
 }
 
