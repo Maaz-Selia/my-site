@@ -1,7 +1,7 @@
 import { VStack, Text } from '@chakra-ui/react'
 import Line from './Line';
 import '../index.css'
-import Contact from './Contact';
+import Travels from './Travels';
 import Projects from './Projects';
 import MainView from './MainView';
 
@@ -17,7 +17,7 @@ const NavBar = ( {setCurrentView }: Props) => {
     return (
         <VStack maxHeight='100%' gap={10}>
             <Line size='10vh' orientation='v' />
-            <Text fontSize={fontSize} className='vertical-text' onClick={() => setCurrentView(<Contact />)}>Contact</Text>
+            <Text fontSize={fontSize} className='vertical-text' onClick={() => setCurrentView(<Travels />)}>Contact</Text>
             <Text fontSize={fontSize} className='vertical-text' onClick={() => setCurrentView(<Projects />)}>Projects</Text>
             <Text fontSize={fontSize} className='vertical-text' onClick={() => setCurrentView(<MainView />)}>Home</Text>
             <Line size='40vh' orientation='v' />
