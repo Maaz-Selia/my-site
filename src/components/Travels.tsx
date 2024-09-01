@@ -2,7 +2,7 @@ import Placeholder from "./Placeholder"
 
 const Travels = () => {
   return (
-    <Placeholder />
+    <Placeholder id="TRAVELS"/>
   )
 }
 
