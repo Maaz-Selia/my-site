@@ -1,6 +1,8 @@
+import Placeholder from "./Placeholder"
+
 const Travels = () => {
   return (
-    <div>Travels</div>
+    <Placeholder />
   )
 }
 
