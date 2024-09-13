@@ -1,4 +1,4 @@
-# Personal Website
+# Personal Webpage
 **JS, CSS, HTML, React18 (Components, Hooks)**
 
 **https://maaz-selia.github.io/my-site/**
